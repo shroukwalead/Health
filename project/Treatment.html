@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>طرق علاج الأمراض المناعية</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #333;
+      background-image: url("fc95d56b8fc0a6149710f359da607c62.png.webp"); /* ← غيريها حسب اسم الخلفية */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header, footer {
+      background-color: rgba(42, 157, 143, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #cafff6;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.92);
+      padding: 30px;
+      max-width: 750px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      animation: slideUp 1s ease-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2a9d8f;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeDown 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeList 0.6s ease forwards;
+    }
+
+    ul li img {
+      width: 50px;
+      height: 50px;
+      margin-left: 15px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    ul li:nth-child(1) { animation-delay: 0.6s; }
+    ul li:nth-child(2) { animation-delay: 0.8s; }
+    ul li:nth-child(3) { animation-delay: 1s; }
+    ul li:nth-child(4) { animation-delay: 1.2s; }
+    ul li:nth-child(5) { animation-delay: 1.4s; }
+    ul li:nth-child(6) { animation-delay: 1.6s; }
+    ul li:nth-child(7) { animation-delay: 1.8s; }
+
+    footer {
+      font-size: 14px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* ====== ANIMATIONS ====== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeList {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>طرق العلاج</h1>
+   <nav>
+      <a href="home.html">الرئيسية</a>
+      <a href="Types of diseases.html">أنواع الأمراض</a>
+     <a href="Symptoms.html"> الاعراض</a>
+      <a href="Treatment.html">العلاج</a>
+      <a href="Contact us.html">تواصل</a>
+    </nav>
+</header>
+
+<section>
+  <h2>العلاج يختلف حسب المرض ونوع الأعراض</h2>
+  <ul>
+    <li><img src="مثبطات.jpeg" alt="كرتيزون"> الأدوية المثبطة للمناعة مثل: الكورتيزون (Prednisone)</li>
+    <li><img src="بيلوجيي2.jpg" alt="أدوية بيولوجية"> أدوية بيولوجية: تستخدم خصيصًا لأمراض مثل الروماتويد</li>
+    <li><img src="مضادات التهاب.jpg" alt="مضادات الالتهاب"> مضادات الالتهاب اللاستيرويدية (NSAIDs)</li>
+    <li><img src="فيتامينات.jpg" alt="فيتامينات"> المكملات الغذائية والفيتامينات مثل D و B12</li>
+    <li><img src="العلاج الطبيعي.jpg" alt="علاج طبيعي"> العلاج الطبيعي للمساعدة في حركة المفاصل</li>
+    <li><img src="رياضة.webp" alt="تعديل نمط الحياة"> تعديل نمط الحياة: تقليل التوتر، نوم كافٍ، رياضة خفيفة</li>
+    <li><img src="التغذية.jpg" alt="غذاء صحي"> التغذية الصحية: أكل مضاد للالتهابات مثل الأوميغا 3 والخضروات</li>
+  </ul>
+</section>
+
+
+
+
+</body>
+</html>

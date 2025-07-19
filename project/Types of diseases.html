@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أنواع الأمراض المناعية</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("fc95d56b8fc0a6149710f359da607c62.png.webp"); /* استبدليها باسم صورة الخلفية */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }header {
+  background-color: rgba(42, 157, 143, 0.9);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+section h2 {
+  text-align: center;
+  color: #2a9d8f;
+}
+
+.disease-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+}
+
+.info {
+  display: none;
+  text-align: right;
+  margin-top: 15px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+  background-color: rgba(42, 157, 143, 0.9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>أنواع الأمراض المناعية</h1>
+     <nav>
+      <a href="home.html">الرئيسية</a>
+      <a href="Types of diseases.html">أنواع الأمراض</a>
+     <a href="Symptoms.html"> الاعراض</a>
+      <a href="Treatment.html">العلاج</a>
+      <a href="Contact us.html">تواصل</a>
+    </nav> 
+  </header>  <section>
+    <h2>اختاري مرضًا لمعرفة التفاصيل</h2>
+    <div class="disease-grid">
+      <div class="card" onclick="toggleInfo('info1')">
+        <img src="الذئبة-الحمراء.jpg" alt="الذئبة الحمراء">
+        <h3>الذئبة الحمراء</h3>
+        <div class="info" id="info1">
+          <p>مرض مناعي يهاجم الجسم نفسه، ويسبب التهابات في الجلد والمفاصل والأعضاء.</p>
+        </div>
+      </div><div class="card" onclick="toggleInfo('info2')">
+    <img src="روماتويد.jpeg" alt="الروماتويد">
+    <h3>الروماتويد</h3>
+    <div class="info" id="info2">
+      <p>يؤثر على المفاصل ويسبب ألمًا وتورمًا، وقد يؤثر على القلب والرئتين.</p>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggleInfo('info3')">
+    <img src="2590-اسباب-الصدفية.jpg" alt="الصدفية">
+    <h3>الصدفية</h3>
+    <div class="info" id="info3">
+      <p>حالة جلدية تظهر بقع حمراء مغطاة بقشور فضية، وقد تؤثر على المفاصل.</p>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggleInfo('info4')">
+    <img src="كرون.png" alt="مرض كرون">
+    <h3>مرض كرون</h3>
+    <div class="info" id="info4">
+      <p>التهاب مزمن في الجهاز الهضمي، يسبب إسهالًا وآلامًا بالبطن وفقدان الوزن.</p>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggleInfo('info5')">
+    <img src="التصلب.jpg" alt="التصلب المتعدد">
+    <h3>التصلب المتعدد</h3>
+    <div class="info" id="info5">
+      <p>يؤثر على الجهاز العصبي المركزي، ويسبب ضعفًا في العضلات ومشاكل في الرؤية والتوازن.</p>
+    </div>
+  </div>
+</div>
+
+  </section>   <script>
+    function toggleInfo(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script></body>
+</html>

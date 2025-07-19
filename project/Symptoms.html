@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>أعراض الأمراض المناعية</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url("fc95d56b8fc0a6149710f359da607c62.png.webp");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: rgba(19, 111, 99, 0.9);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #75c9b7;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #4fa397;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 40px auto;
+      max-width: 800px;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.2s; }
+    section:nth-of-type(3) { animation-delay: 0.4s; }
+    section:nth-of-type(4) { animation-delay: 0.6s; }
+    section:nth-of-type(5) { animation-delay: 0.8s; }
+    section:nth-of-type(6) { animation-delay: 1s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section img {
+      width: 100%;
+      height: 280px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    h2 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #136f63;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 17px;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .back-button {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .back-button a {
+      padding: 12px 25px;
+      background-color: #7fb3d5;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .back-button a:hover {
+      background-color: #5499c7;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 8px auto;
+        width: 80%;
+      }
+      section img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>أعراض الأمراض المناعية</h2>
+   <nav>
+      <a href="home.html">الرئيسية</a>
+      <a href="Types of diseases.html">أنواع الأمراض</a>
+     <a href="Symptoms.html"> الاعراض</a>
+      <a href="Treatment.html">العلاج</a>
+      <a href="Contact us.html">تواصل</a>
+    </nav>
+  </header>
+
+  <section id="lupus">
+    <img src="الذئبة-الحمراء.jpg" alt="الذئبة الحمراء">
+    <h3>الذئبة الحمراء (Lupus)</h3>
+    <p>طفح جلدي على الوجه، تعب شديد، آلام المفاصل، تساقط الشعر، مشاكل في الكلى.</p>
+  </section>
+
+  <section id="ra">
+    <img src="روماتويد.jpeg" alt="الروماتويد">
+    <h3>الروماتويد (Rheumatoid Arthritis)</h3>
+    <p>تورم وألم في المفاصل، تصلب صباحي، ضعف عام، مشاكل في الحركة.</p>
+  </section>
+
+  <section id="crohn">
+    <img src="كرون.png" alt="مرض كرون">
+    <h3>مرض كرون (Crohn's Disease)</h3>
+    <p>آلام في البطن، إسهال مزمن، فقدان وزن، تعب، التهابات بالأمعاء.</p>
+  </section>
+
+  <section id="psoriasis">
+    <img src="2590-اسباب-الصدفية.jpg" alt="الصدفية">
+    <h3>الصدفية (Psoriasis)</h3>
+    <p>بقع جلدية حمراء متقشرة، حكة، تشقق الجلد، أظافر متغيرة الشكل.</p>
+  </section>
+
+  <section id="ms">
+    <img src="التصلب.jpg" alt="التصلب المتعدد">
+    <h3>التصلب المتعدد (Multiple Sclerosis)</h3>
+    <p>مشاكل في الرؤية، تنميل الأطراف، ضعف في العضلات، صعوبة في التوازن، إرهاق مستمر.</p>
+  </section>
+
+ 
+
+</body>
+</html>
